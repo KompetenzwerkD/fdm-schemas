@@ -1,0 +1,82 @@
+
+#Project metadata
+#
+#Schema verson: 0.1
+#Schema file: project_metadata_schema.toml
+#
+#General 
+
+Name=""
+Definition: The name of the project.
+Obligation: mandatory, exaclty once
+
+Identifier=""
+Definition: The identifier property represents any kind of identifier for this project.
+Obligation: mandatory, exaclty once
+
+Url=""
+Definition: URL of this project.
+Obligation: recommended, once
+
+StartDate=""
+Definition: The start date and time of this project (in ISO 8601 date format).
+Obligation: mandatory, exaclty once
+
+EndDate=""
+Definition: The end date and time of this project (in ISO 8601 date format).
+Obligation: recommended, once
+
+FundingAgency=""
+Definition: Organization providing project funding.
+Obligation: recommended, once
+
+Description=""
+Definition: A description of the project.
+Obligation: mandatory, exaclty once
+
+#Organization 
+
+ParentOrganization=""
+Definition: The organization responsible for this project.
+Obligation: mendatory, at least once
+
+MemberOf=""
+Definition: An Organization to which this project is affiliated.
+Obligation: optional, any number of times
+
+ProjectLeader=""
+Definition: Person in charge of this project.
+Obligation: mendatory, at least once
+
+Employee=""
+Definition: Someone working in this project.
+Obligation: recommended, any number of times
+
+#Contact 
+
+Email=""
+Definition: Email address.
+Obligation: mandatory, at least once
+
+Address=""
+Definition: Physical address.
+Obligation: mandatory, at least once
+
+
+
+----------------------------
+Anmerkungen:
+Bitte Freitext stets in Englisch ausfüllen, außer es ist explizit anders angegeben.
+Falls Sie ein Attribut mehrfach ausfüllen wollen, kopieren Sie einfach den entsprechenden Block und fügen Sie ihn erneut ins Dokument ein.
+Bei Fragen wenden Sie sich gerne jederzeit an das KompetenzWerkD, z.B. per Mail: kompetenzwerkd@saw-leipzig.de
+
+Für Datumsangaben empfehlen wir stets den Standard ISO 8601.
+Eine Einführung bietet beispielsweise Wikipedia: https://de.wikipedia.org/wiki/ISO_8601
+Mögliche Schemata, die Sie verwenden können, sind zum Beispiel:
+YYYY-MM-DD
+YYYY-MM
+YYYY
+oder für Zeitspannen:
+YYYY-MM-DD/YYYY-MM-DD
+YYYY-MM/YYYY-MM
+YYYY/YYYY

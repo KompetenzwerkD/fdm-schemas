@@ -1,0 +1,186 @@
+[Metadata]
+Changed = "15.04.2015"
+Version = "0.1"
+
+#Namespace= schema.org
+
+#overview=
+#
+#general=
+#- Name
+#- Identifier
+#- Url
+#- StartDate
+#- EndDate
+#- FundingAgency*
+#- Description
+#
+#organization
+#- ParentOrganization
+#- MemberOf
+#- ProjectLeader**
+#- Employee
+#
+#contact information
+#- Address
+#- Email
+
+#* proposed, not yet fully implemented in schema.org
+#** not in schema.org
+
+# Todos/open-questions=
+# - Identifier -> what can/should be used as an identifier?
+# - Organizations -> how to standardize organization input?
+# - employees/project leader -> identifier? orcid?
+
+
+[General]
+
+    [General.Name]
+    Label = "Name"
+    URI = "https://schema.org/name"
+    Definition = "The name of the project."
+    Comment = ""
+    Type = "property"
+    Obligation = "mandatory"
+    Occurrence = "1/1"
+    Vocabulary_Datatype = "Text" 
+    Language = ""
+
+    [General.dentifier]
+    Label = "Identifier"
+    URI = "https://schema.org/identifier"
+    Definition = "The identifier property represents any kind of identifier for this project."
+    Comment = ""
+    Type = "property"
+    Obligation = "mandatory"
+    Occurrence = "1/1"
+    Vocabulary_Datatype = "Text/Url"
+    Language = ""
+
+    [General.Url]
+    Label = "Url"
+    URI = "https://schema.org/url"
+    Definition = "URL of this project."
+    Comment = ""
+    Type = "property"
+    Obligation = "recommended"
+    Occurrence = "0/1"
+    Vocabulary_Datatype = "Url"
+    Language = ""
+
+    [General.StartDate]
+    Label = "StartDate"
+    URI = "https://schema.org/startDate"
+    Definition = "The start date and time of this project (in ISO 8601 date format)."
+    Comment = ""
+    Type = "property"
+    Obligation = "mandatory"
+    Occurrence = "1/1"
+    Vocabulary_Datatype = "Date"
+    Language = ""
+
+    [General.EndDate]
+    Label = "EndDate"
+    URI = "https://schema.org/endDate"
+    Definition = "The end date and time of this project (in ISO 8601 date format)."
+    Comment = ""
+    Type = "property"
+    Obligation = "recommended"
+    Occurrence = "0/1"
+    Vocabulary_Datatype = "Date"
+    Language = ""
+
+    [General.FundingAgency]
+    Label = "FundingAgency"
+    URI = "???"
+    Definition = "Organization providing project funding."
+    Comment = ""
+    Type = "property"
+    Obligation = "recommended"
+    Occurrence = "0/1"
+    Vocabulary_Datatype = "Date"
+    Language = ""
+
+    [General.Description]
+    Label = "Description"
+    URI = "https://schema.org/description"
+    Definition = "A description of the project."
+    Comment = ""
+    Type = "property"
+    Obligation = "mandatory"
+    Occurrence = "1/1"
+    Vocabulary_Datatype = "Text"
+    Language = ""
+
+
+[Organization]
+
+    [Organization.ParentOrganization]
+    Label = "ParentOrganization"
+    URI = "https://schema.org/parentOrganization"
+    Definition = "The organization responsible for this project."
+    Comment = ""
+    Type = "property"
+    Obligation = "mendatory"
+    Occurrence = "1/n"
+    Vocabulary_Datatype = "Organization"
+    Language = ""
+
+    [Organization.MemberOf]
+    Label = "MemberOf"
+    URI = "https://schema.org/memberOf"
+    Definition = "An Organization to which this project is affiliated." 
+    Comment = ""
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/n"
+    Vocabulary_Datatype = "Organization"
+    Language = ""
+
+    [Organization.ProjectLeader]
+    Label = "ProjectLeader"
+    URI = "???"
+    Definition = "Person in charge of this project."
+    Comment = ""
+    Type = "property"
+    Obligation = "mendatory"
+    Occurrence = "1/n"
+    Vocabulary_Datatype = "Person"
+    Language = ""
+
+    [Organization.Employee]
+    Label = "Employee"
+    URI = "https://schema.org/employee"
+    Definition = "Someone working in this project."
+    Comment = ""
+    Type = "property"
+    Obligation = "recommended"
+    Occurrence = "0/n"
+    Vocabulary_Datatype = "Person"
+    Language = ""
+
+
+[Contact]
+
+    [Contact.Email]
+    Label = "Email"
+    URI = "https://schema.org/email"
+    Definition = "Email address."
+    Comment = ""
+    Type = "property"
+    Obligation = "mandatory"
+    Occurrence = "1/n"
+    Vocabulary_Datatype = "Text"
+    Language = ""
+
+    [Contact.Address]
+    Label = "Address"
+    URI = "https://schema.org/address"
+    Definition = "Physical address."
+    Comment = ""
+    Type = "property"
+    Obligation = "mandatory"
+    Occurrence = "1/n"
+    Vocabulary_Datatype= "Text"
+    Language = ""
