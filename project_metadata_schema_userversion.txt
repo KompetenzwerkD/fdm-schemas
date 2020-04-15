@@ -9,11 +9,11 @@
 
 Name=""
 Definition: The name of the project.
-Obligation: mandatory, exaclty once
+Obligation: mandatory, exactly once
 
 Identifier=""
 Definition: The identifier property represents any kind of identifier for this project.
-Obligation: mandatory, exaclty once
+Obligation: mandatory, exactly once
 
 Url=""
 Definition: URL of this project.
@@ -21,7 +21,7 @@ Obligation: recommended, once
 
 StartDate=""
 Definition: The start date and time of this project (in ISO 8601 date format).
-Obligation: mandatory, exaclty once
+Obligation: mandatory, exactly once
 
 EndDate=""
 Definition: The end date and time of this project (in ISO 8601 date format).
@@ -33,7 +33,7 @@ Obligation: recommended, once
 
 Description=""
 Definition: A description of the project.
-Obligation: mandatory, exaclty once
+Obligation: mandatory, exactly once
 
 #Organization 
 

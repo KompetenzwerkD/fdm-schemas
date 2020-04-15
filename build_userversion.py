@@ -34,7 +34,7 @@ YYYY/YYYY
 """
 
 OCCURRENCE = {
-    "1/1": "exaclty once",
+    "1/1": "exactly once",
     "0/1": "once",
     "0/n": "any number of times",
     "1/n": "at least once"
