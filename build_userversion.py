@@ -1,7 +1,7 @@
 import toml
 
 FILE = "project_metadata_schema.toml"
-OUT_FILE = "project_metadata_schema.txt"
+OUT_FILE = "project_metadata_schema_userversion.txt"
 
 
 HEADER = """
