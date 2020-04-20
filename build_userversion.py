@@ -6,7 +6,7 @@ OUT_FILE = "templates/project_metadata_schema_userversion.txt"
 
 
 HEADER = """
-# Project metadata
+# {title}
 #
 # Schema verson: {version}
 # Schema file: {schema}
@@ -58,6 +58,7 @@ def build_userversion(schema, out_file):
 
     with open(out_file, "w") as f:
         f.write(HEADER.format(
+            title=schema["Metadata"]["Title"],
             version=schema["Metadata"]["Version"],
             schema=schema["Metadata"]["Location"]
         ))

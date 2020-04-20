@@ -1,5 +1,5 @@
 
-# Project metadata
+# Dataset Profile
 #
 # Schema verson: 0.2
 # Schema file: https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/schemas/dcmi_dataset_profile.toml
