@@ -1,6 +1,7 @@
 [Metadata]
 Changed = "20.04.2020"
 Version = "0.2"
+Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/schemas/project_metadata_schema.toml"
 
 #Namespace= schema.org
 

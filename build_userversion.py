@@ -1,7 +1,7 @@
 import toml
 
-FILE = "project_metadata_schema.toml"
-OUT_FILE = "project_metadata_schema_userversion.txt"
+FILE = "schemas/project_metadata_schema.toml"
+OUT_FILE = "templates/project_metadata_schema_userversion.txt"
 
 
 HEADER = """
@@ -58,7 +58,7 @@ def build_userversion(schema):
     with open(OUT_FILE, "w") as f:
         f.write(HEADER.format(
             version=schema["Metadata"]["Version"],
-            schema=FILE
+            schema=schema["Metadata"]["Location"]
         ))
 
         for section, properties in schema.items():
