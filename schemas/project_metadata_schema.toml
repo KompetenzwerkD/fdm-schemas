@@ -45,7 +45,7 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "mandatory"
     Occurrence = "1/1"
-    Vocabulary_Datatype = "Text" 
+    Datatype = "Text" 
     Language = ""
 
     [General.dentifier]
@@ -56,7 +56,7 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "mandatory"
     Occurrence = "1/1"
-    Vocabulary_Datatype = "Text/Url"
+    Datatype = "Text/Url"
     Language = ""
 
     [General.Url]
@@ -67,7 +67,7 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "recommended"
     Occurrence = "0/1"
-    Vocabulary_Datatype = "Url"
+    Datatype = "Url"
     Language = ""
 
     [General.StartDate]
@@ -78,7 +78,7 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "mandatory"
     Occurrence = "1/1"
-    Vocabulary_Datatype = "Date"
+    Datatype = "Date"
     Language = ""
 
     [General.EndDate]
@@ -89,7 +89,7 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "recommended"
     Occurrence = "0/1"
-    Vocabulary_Datatype = "Date"
+    Datatype = "Date"
     Language = "eng"
 
     [General.Description]
@@ -100,7 +100,7 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "mandatory"
     Occurrence = "1/1"
-    Vocabulary_Datatype = "Text"
+    Datatype = "Text"
     Language = "eng"
 
     [General.Beschreibung]
@@ -111,7 +111,7 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "mandatory"
     Occurrence = "1/1"
-    Vocabulary_Datatype = "Text"
+    Datatype = "Text"
     Language = "deu"
 
 
@@ -125,9 +125,9 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "mendatory"
     Occurrence = "1/n"
-    Vocabulary_Datatype = "Organization"
+    Datatype = "Organization"
     Language = "eng"
-    Qualifier = "IdentifierType"
+    Qualifier = [ "IdentifierType" ]
 
     [Organization.MemberOf]
     Label = "MemberOf"
@@ -137,9 +137,9 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "optional"
     Occurrence = "0/n"
-    Vocabulary_Datatype = "Organization"
+    Datatype = "Organization"
     Language = "eng"
-    Qualifier = "IdentifierType"
+    Qualifier = [ "IdentifierType"]
 
     [Organization.FundingAgency]
     Label = "FundingAgency"
@@ -149,9 +149,9 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "recommended"
     Occurrence = "0/1"
-    Vocabulary_Datatype = "Date"
+    Datatype = "Date"
     Language = "eng"
-    Qualifier = "IdentifierType"
+    Qualifier = [ "IdentifierType" ]
 
     [Organization.ProjectLeader]
     Label = "ProjectLeader"
@@ -161,9 +161,9 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "mendatory"
     Occurrence = "1/n"
-    Vocabulary_Datatype = "Person"
+    Datatype = "Person"
     Language = "eng"
-    Qualifier = "IdentifierType"
+    Qualifier = [ "IdentifierType" ]
     Hint = """
     # Possible Vocabularies:
     # ORCID - https://orcid.org/Alternatives
@@ -179,9 +179,9 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "recommended"
     Occurrence = "0/n"
-    Vocabulary_Datatype = "Person"
+    Datatype = "Person"
     Language = "eng"
-    Qualifier = "IdentifierType"
+    Qualifier = [ "IdentifierType" ]
     Hint = """
     # Possible Vocabularies:
     # ORCID - https://orcid.org/Alternatives
@@ -198,7 +198,7 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "mandatory"
     Occurrence = "1/n"
-    Vocabulary_Datatype = "Text"
+    Datatype = "Text"
     Language = "eng"
 
     [Contact.Address]
@@ -209,5 +209,5 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "mandatory"
     Occurrence = "1/n"
-    Vocabulary_Datatype= "Text"
+    Datatype= "Text"
     Language = "eng"

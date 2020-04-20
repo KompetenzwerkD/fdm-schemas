@@ -1,4 +1,5 @@
 import toml
+import argparse
 
 FILE = "schemas/project_metadata_schema.toml"
 OUT_FILE = "templates/project_metadata_schema_userversion.txt"
@@ -45,17 +46,17 @@ def read_schema(filepath):
     """
     Read schema toml file
     """
-    with open(FILE) as f:
+    with open(filepath) as f:
         schema = toml.load(f)
 
     return schema
 
-def build_userversion(schema):
+def build_userversion(schema, out_file):
     """
     Parse schema and write userversion to file
     """
 
-    with open(OUT_FILE, "w") as f:
+    with open(out_file, "w") as f:
         f.write(HEADER.format(
             version=schema["Metadata"]["Version"],
             schema=schema["Metadata"]["Location"]
@@ -74,9 +75,10 @@ def build_userversion(schema):
 
                 f.write("{}=\"\"\n".format(prop["Label"]))
                 if "Qualifier" in prop:
-                    f.write(prop["Qualifier"] + "=\"\"\n")
+                    for qualifier in prop["Qualifier"]:
+                        f.write(qualifier + "=\"\"\n")
                 f.write("# Definition: {}\n".format(prop["Definition"]))
-
+                f.write("# Datatype: {}\n".format(prop["Datatype"]))
                 f.write("# Obligation: {}, {}\n".format(
                     prop["Obligation"], OCCURRENCE[prop["Occurrence"]]
                 ))
@@ -89,6 +91,15 @@ def build_userversion(schema):
         f.write(FOOTER)
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Build Template from metadata schema.')
+    parser.add_argument('schema', metavar='S', type=str, nargs=1,
+                    help='Schema file position')
 
-    schema = read_schema(FILE)
-    build_userversion(schema)
+    args = parser.parse_args()
+    filepath = args.schema[0]
+
+    out_file = "templates/{}.txt".format(
+                    filepath.replace(".toml", "").replace("schemas/", ""))
+
+    schema = read_schema(filepath)
+    build_userversion(schema, out_file)

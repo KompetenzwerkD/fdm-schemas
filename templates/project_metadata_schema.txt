@@ -9,30 +9,37 @@
 
 Name=""
 # Definition: The name of the project.
+# Datatype: Text
 # Obligation: mandatory, exactly once
 
 Identifier=""
 # Definition: The identifier property represents any kind of identifier for this project.
+# Datatype: Text/Url
 # Obligation: mandatory, exactly once
 
 Url=""
 # Definition: URL of this project.
+# Datatype: Url
 # Obligation: recommended, once
 
 StartDate=""
 # Definition: The start date and time of this project (in ISO 8601 date format).
+# Datatype: Date
 # Obligation: mandatory, exactly once
 
 EndDate=""
 # Definition: The end date and time of this project (in ISO 8601 date format).
+# Datatype: Date
 # Obligation: recommended, once
 
 Description=""
 # Definition: A description of the project in English.
+# Datatype: Text
 # Obligation: mandatory, exactly once
 
 Beschreibung=""
 # Definition: A description of the project in German.
+# Datatype: Text
 # Obligation: mandatory, exactly once
 
 # Organization 
@@ -40,21 +47,25 @@ Beschreibung=""
 ParentOrganization=""
 IdentifierType=""
 # Definition: The organization responsible for this project.
+# Datatype: Organization
 # Obligation: mendatory, at least once
 
 MemberOf=""
 IdentifierType=""
 # Definition: An Organization to which this project is affiliated.
+# Datatype: Organization
 # Obligation: optional, any number of times
 
 FundingAgency=""
 IdentifierType=""
 # Definition: Organization providing project funding.
+# Datatype: Date
 # Obligation: recommended, once
 
 ProjectLeader=""
 IdentifierType=""
 # Definition: Person in charge of this project.
+# Datatype: Person
 # Obligation: mendatory, at least once
     # Possible Vocabularies:
     # ORCID - https://orcid.org/Alternatives
@@ -63,6 +74,7 @@ IdentifierType=""
 Employee=""
 IdentifierType=""
 # Definition: Someone working in this project.
+# Datatype: Person
 # Obligation: recommended, any number of times
     # Possible Vocabularies:
     # ORCID - https://orcid.org/Alternatives
@@ -72,10 +84,12 @@ IdentifierType=""
 
 Email=""
 # Definition: Email address.
+# Datatype: Text
 # Obligation: mandatory, at least once
 
 Address=""
 # Definition: Physical address.
+# Datatype: Text
 # Obligation: mandatory, at least once
 
 

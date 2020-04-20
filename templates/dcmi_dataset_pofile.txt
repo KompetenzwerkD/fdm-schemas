@@ -1,0 +1,201 @@
+
+# Project metadata
+#
+# Schema verson: 0.2
+# Schema file: https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/schemas/dcmi_dataset_profile.toml
+#
+
+# General 
+
+Titel=""
+# Definition: Title of the resource in German as free text.
+# Datatype: Text
+# Obligation: mandatory, exactly once
+
+Title=""
+# Definition: Title of the resource in English as free text.
+# Datatype: Text
+# Obligation: mandatory, exactly once
+
+Description=""
+# Definition: An account of the resource in English.
+# Datatype: Text
+# Obligation: mandatory, exactly once
+
+Beschreibung=""
+# Definition: An account of the resource in German.
+# Datatype: Text
+# Obligation: mandatory, exactly once
+
+Subject=""
+IdentifierType=""
+# Definition: A topic or scientific field of the resource.
+# Datatype: ID
+# Obligation: recommended, any number of times
+    # Possible Vocabularies:
+    # "Universal Decimal Classification" http://www.udcsummary.info/php/index.php?lang=en
+    # "SKOS UNESCO Nomenclature" https://skos.um.es/unesco6/
+    # "Library of Congress Subject Headings" http://www.loc.gov/catdir/cpso/lcco/
+    # "Gemeinsame Normdatei" https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd.html
+    
+Spatial Coverage=""
+IdentifierType=""
+# Definition: Spatial characteristics of the resource.
+# Datatype: ID
+# Obligation: optional, any number of times
+    # Possible Vocabularies
+    # "GND ID" https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html http://swb.bsz-bw.de/DB=2.104/
+    # "Getty Thesaurus of Geographic Names" http://www.getty.edu/research/tools/vocabularies/tgn/index.html
+    # "Pleiades Gazetteer and Graph of Ancient Places" https://pleiades.stoa.org/
+    # "Dublin Core Box" https://www.dublincore.org/specifications/dublin-core/dcmi-box/
+    # "Dublin Core Point" https://www.dublincore.org/specifications/dublin-core/dcmi-point/
+    
+Temporal Coverage=""
+# Definition: Temporal characteristics of the resource.
+# Datatype: ISO_8601
+# Obligation: optional, any number of times
+
+Language=""
+# Definition: A language of the resource.
+# Datatype: ISO 639-3 https://iso639-3.sil.org/code_tables/639/data/all
+# Obligation: optional, any number of times
+
+# Format 
+
+Type=""
+# Definition: The nature or genre of the resource.
+# Datatype: DCMI-Type (Collection, Dataset, Event, Image, InteractiveResource, MovingImage, PhysicalObject, Service, Software, Sound, StillImage, Text), see https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/
+# Obligation: recommended, any number of times
+
+Medium=""
+# Definition: The material or physical carrier of the resource as free text.
+# Datatype: http://purl.org/dc/terms/PhysicalMedium / http://purl.org/dc/terms/PhysicalResource
+# Obligation: optional, any number of times
+
+Format=""
+# Definition: The file format or physical medium.
+# Datatype: IANA Media Types https://www.iana.org/assignments/media-types/media-types.xhtml
+# Obligation: recommended, any number of times
+
+Conforms To=""
+# Definition: An established standard to which the described resource conforms.
+# Datatype: http://purl.org/dc/terms/Standard , URI or free text
+# Obligation: optional, any number of times
+
+# Access 
+
+Identifier=""
+IdentifierType=""
+# Definition: An unambiguous reference to the resource within a given context.
+# Datatype: http://www.w3.org/2000/01/rdf-schema#Literal ; PID such as DOI, URN, ISBN...
+# Obligation: recommended, any number of times
+
+License=""
+# Definition: A legal document giving official permission to do something with the resource.
+# Datatype: URI (http://purl.org/dc/dcmitype/InteractiveResource) or free text
+# Obligation: recommended, once
+
+Access Rights=""
+# Definition: Information about who can access the resource or an indication of its security status as free text.
+# Datatype: http://purl.org/dc/terms/RightsStatement, free text
+# Obligation: recommended, any number of times
+
+Bibliographic Citation=""
+# Definition: A bibliographic reference for the resource.
+# Datatype: http://www.w3.org/2000/01/rdf-schema#Literal
+# Obligation: optional, any number of times
+
+Publisher=""
+IdentifierType=""
+# Definition: An entity responsible for making the resource available.
+# Datatype: http://purl.org/dc/terms/Agent ; URI/identifier or text
+# Obligation: optional, once
+
+Rights=""
+# Definition: Information about rights held in and over the resource.
+# Datatype: http://purl.org/dc/terms/RightsStatement ; URI or text
+# Obligation: optional, any number of times
+
+Rights Holder=""
+IdentityType=""
+# Definition: A person or organization owning or managing rights over the resource.
+# Datatype: http://purl.org/dc/terms/Agent ; URI, identifier or text
+# Obligation: optional, any number of times
+
+Date Available=""
+# Definition: Date that the resource became or will become available.
+# Datatype: http://purl.org/dc/terms/W3CDTF, ISO_8601
+# Obligation: optional, once
+
+Is Referenced By=""
+DocumentType=""
+IdentifierType=""
+# Definition: A related resource (paper, data set) that references, cites, or otherwise points to the described resource.
+# Datatype: PID / similar identifier, or text
+# Obligation: optional, any number of times
+
+# Provenance 
+
+Date Created=""
+# Definition: Date of creation of the resource.
+# Datatype: http://purl.org/dc/terms/W3CDTF, ISO_8601
+# Obligation: recommended, once
+
+Creator=""
+IdentifierType=""
+# Definition: An entity responsible for making the resource.
+# Datatype: 'ORCID' https://orcid.org/Alternatives | 'Gemeinsame Normdatei' https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
+# Obligation: recommended, any number of times
+
+Contributor=""
+IdentifierType=""
+# Definition: An entity responsible for making contributions to the resource.
+# Datatype: 'ORCID' https://orcid.org/Alternatives | 'Gemeinsame Normdatei' https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
+# Obligation: optional, any number of times
+
+Provenance=""
+# Definition: A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.
+# Datatype: http://purl.org/dc/terms/ProvenanceStatement
+# Obligation: recommended, any number of times
+
+Source=""
+IdentifierType=""
+# Definition: A related resource from which the described resource is derived.
+# Datatype: URI, or text
+# Obligation: optional, any number of times
+
+Is Part Of=""
+IdentifierType=""
+# Definition: A related resource in which the described resource is physically or logically included.
+# Datatype: PID such as URI, URN, DOI...
+# Obligation: optional, any number of times
+
+Is Version Of=""
+IdentifierType=""
+# Definition: A related resource of which the described resource is a version, edition, or adaptation.
+# Datatype: identifier or text
+# Obligation: optional, once
+
+Accrual Method=""
+# Definition: The method by which items are added to the collection/dataset.
+# Datatype: http://purl.org/dc/terms/MethodOfAccrual from https://www.dublincore.org/specifications/dublin-core/collection-description/accrual-method/
+# Obligation:  optional, any number of times
+
+
+
+# ----------------------------
+# Anmerkungen:
+# Bitte Freitext stets in Englisch ausfüllen, außer es ist explizit anders angegeben.
+# Falls Sie ein Attribut mehrfach ausfüllen wollen, kopieren Sie einfach den entsprechenden Block und fügen Sie ihn erneut ins Dokument ein.
+# Bei Fragen wenden Sie sich gerne jederzeit an das KompetenzWerkD, z.B. per Mail: kompetenzwerkd@saw-leipzig.de
+#
+# Für Datumsangaben empfehlen wir stets den Standard ISO 8601.
+# Eine Einführung bietet beispielsweise Wikipedia: https://de.wikipedia.org/wiki/ISO_8601
+# Mögliche Schemata, die Sie verwenden können, sind zum Beispiel:
+# YYYY-MM-DD
+# YYYY-MM
+# YYYY
+# oder für Zeitspannen:
+# YYYY-MM-DD/YYYY-MM-DD
+# YYYY-MM/YYYY-MM
+# YYYY/YYYY

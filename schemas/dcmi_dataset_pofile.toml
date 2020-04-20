@@ -1,0 +1,398 @@
+[Metadata]
+Changed = "20.04.2020"
+Version = "0.2"
+Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/schemas/dcmi_dataset_profile.toml"
+
+#Namespace= schema.org
+
+
+# interne, halbwegs formale Übersicht in version <1.0
+# für Anwender nicht zu gebrauchen und nicht für sie gedacht
+# Für Anwender eher = "Label + Description
+# es bleiben noch wenige TODOs zu Vokabularen = "Audience
+# Was lassen wir noch raus? Ich habe zunächst alles halbwegs sinnvolle aus DC übernommen
+# Thematisch umsortieren?
+
+
+# interne, halbwegs formale Übersicht in version <1.0
+# für Anwender nicht zu gebrauchen und nicht für sie gedacht
+# Für Anwender eher = "Label + Description
+# es bleiben noch wenige TODOs zu Vokabularen = "Audience
+# Was lassen wir noch raus? Ich habe zunächst alles halbwegs sinnvolle aus DC übernommen
+# Thematisch umsortieren?
+
+# Label = "Dataset"
+# Definition = "Generic dataset or single file of a research project"
+# Type = "Class"
+
+    #General Description and Content:
+[General]
+
+    [General.TitleDeu]
+    Label = "Titel"
+    URI = "http://purl.org/dc/terms/title"
+    Definition = "Title of the resource in German as free text."
+    Comment = ""
+    Type = "property"
+    Obligation = "mandatory"
+    Occurrence = "1/1"
+    Datatype = "Text"
+    Language = "deu"
+
+    [General.TitleEng]
+    Label = "Title"
+    URI = "http://purl.org/dc/terms/title"
+    Definition = "Title of the resource in English as free text."
+    Comment = ""
+    Type = "property"
+    Obligation = "mandatory"
+    Occurrence = "1/1"
+    Datatype = "Text"
+    Language = "eng"
+    
+    [General.Description]
+    Label = "Description"
+    URI = "http://purl.org/dc/terms/description"
+    Definition = "An account of the resource in English."
+    Comment = "Description may include but is not limited to ='an abstract, a table of contents, a graphical representation, or a free-text account of the resource'."
+    Type = "property"
+    Obligation = "mandatory"
+    Occurrence = "1/1"
+    Datatype = "Text"
+    Language = "eng"
+
+    [General.Beschreibung]
+    Label = "Beschreibung"
+    URI = "http://purl.org/dc/terms/description"
+    Definition = "An account of the resource in German."
+    Comment = "Description may include but is not limited to = 'an abstract, a table of contents, a graphical representation, or a free-text account of the resource'."
+    Type = "property"
+    Obligation = "mandatory"
+    Occurrence = "1/1"
+    Datatype = "Text"
+    Language = "deu"
+    
+    [General.Subject]
+    Label = "Subject"
+    Qualifier = [ "IdentifierType" ]
+    URI = "http://purl.org/dc/terms/subject"
+    Definition = "A topic or scientific field of the resource."
+    Comment = "Please use a standard vocabulary for identifying the subject, we suggest using SKOS or Universal Decimal Classification. Please also state which authority file you used."
+    Type = "property"
+    Obligation = "recommended"
+    Occurrence = "0/n"
+    Datatype = "ID"
+    Hint = """
+    # Possible Vocabularies:
+    # "Universal Decimal Classification" http://www.udcsummary.info/php/index.php?lang=en
+    # "SKOS UNESCO Nomenclature" https://skos.um.es/unesco6/
+    # "Library of Congress Subject Headings" http://www.loc.gov/catdir/cpso/lcco/
+    # "Gemeinsame Normdatei" https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd.html
+    """
+    Language = ""
+
+    [General.SpatialCoverage]
+    Label = "Spatial Coverage"
+    Qualifier = [ "IdentifierType" ]
+    URI = "http://purl.org/dc/terms/spatial"
+    Definition = "Spatial characteristics of the resource."
+    Comment = "Try to use an authority file or geographic reference system described below and sate which one was utilized."
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/n"
+    Datatype = "ID"
+    Hint = """
+    # Possible Vocabularies
+    # "GND ID" https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html http://swb.bsz-bw.de/DB=2.104/
+    # "Getty Thesaurus of Geographic Names" http://www.getty.edu/research/tools/vocabularies/tgn/index.html
+    # "Pleiades Gazetteer and Graph of Ancient Places" https://pleiades.stoa.org/
+    # "Dublin Core Box" https://www.dublincore.org/specifications/dublin-core/dcmi-box/
+    # "Dublin Core Point" https://www.dublincore.org/specifications/dublin-core/dcmi-point/
+    """
+    Language = "eng"
+
+    [General.TemporalCoverage]
+    Label = "Temporal Coverage"
+    URI = "http://purl.org/dc/terms/temporal"
+    Definition = "Temporal characteristics of the resource."
+    Comment = "Please use ISO_8601 format."
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/n"
+    Datatype = "ISO_8601"
+    Language = ""
+    
+    [General.Language]
+    Label = "Language"
+    URI = "http://purl.org/dc/terms/language"
+    Definition = "A language of the resource."
+    Comment = "Please use a value representing a language from the controlled vocabulary ISO 639-3."
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/n"
+    Datatype = "ISO 639-3 https://iso639-3.sil.org/code_tables/639/data/all"
+    Language = ""
+
+#Object/Format
+[Format]
+    
+    [Format.Type]
+    Label = "Type"
+    URI = "http://purl.org/dc/terms/type"
+    Definition = "The nature or genre of the resource."
+    Comment = "Please use the controlled vocabulary of the Dublin Core Type Vocabulary"
+    Type = "Property"
+    Obligation = "recommended"
+    Occurrence = "0/n"
+    Datatype = "DCMI-Type (Collection, Dataset, Event, Image, InteractiveResource, MovingImage, PhysicalObject, Service, Software, Sound, StillImage, Text), see https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/"
+    Language = ""
+
+    [Format.Medium]
+    Label = "Medium"
+    URI = "http://purl.org/dc/terms/medium"
+    Definition = "The material or physical carrier of the resource as free text."
+    Comment = ""
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/n"
+    Datatype = "http://purl.org/dc/terms/PhysicalMedium / http://purl.org/dc/terms/PhysicalResource"
+    Language = ""
+       
+    [Format.Format]
+    Label = "Format"
+    URI = "http://purl.org/dc/terms/format"
+    Definition = "The file format or physical medium."
+    Comment = "If stating file formats please use a name from the list of Media Types of IANA. Otherwise use free text."
+    Type = "property"
+    Obligation = "recommended"
+    Occurrence = "0/n"
+    Datatype = "IANA Media Types https://www.iana.org/assignments/media-types/media-types.xhtml"
+    Language = "eng"
+    
+    [Format.ConformsTo]
+    Label = "Conforms To"
+    URI = "http://purl.org/dc/terms/conformsTo"
+    Definition = "An established standard to which the described resource conforms."
+    Comment = "Use free text or an URL/URI if possible."
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/n"
+    Datatype = "http://purl.org/dc/terms/Standard , URI or free text"
+    Language = "eng"
+
+
+#Access:
+[Access]
+
+    [Access.Identifier]
+    Label = "Identifier"
+    Qualifier = [ "IdentifierType" ]
+    URI = "http://purl.org/dc/terms/identifier"
+    Definition = "An unambiguous reference to the resource within a given context."
+    Comment = "ecommended practice is to identify the resource by means of a string conforming to an identification system (using a Persistent Identifier - PID. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs. Please also state the type of PID (ISBN, DOI,...). Alternatively, state the URL the resource is/will be available at."
+    Type = "property"
+    Obligation = "recommended"
+    Occurrence = "0/n"
+    Datatype = "http://www.w3.org/2000/01/rdf-schema#Literal ; PID such as DOI, URN, ISBN..."
+    Language = ""
+
+    [Access.License]
+    Label = "License"
+    URI = "http://purl.org/dc/terms/license"
+    Definition = "A legal document giving official permission to do something with the resource."
+    Comment = "Recommended practice is to identify the license document with a link (URL/URI). Otherwise use free text."
+    Type = "property"
+    Obligation = "recommended"
+    Occurrence = "0/1"
+    Datatype = "URI (http://purl.org/dc/dcmitype/InteractiveResource) or free text"
+    Language = "eng"
+    
+    [Access.AccessRights]
+    Label = "Access Rights"
+    URI = "http://purl.org/dc/terms/accessRights"
+    Definition = "Information about who can access the resource or an indication of its security status as free text."
+    Comment = "Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."
+    Type = "property"
+    Obligation = "recommended"
+    Occurrence = "0/n"
+    Datatype = "http://purl.org/dc/terms/RightsStatement, free text"
+    Language = "eng"
+    
+    [Access.BibliographicCitation]
+    Label = "Bibliographic Citation"
+    URI = "http://purl.org/dc/terms/bibliographicCitation"
+    Definition = "A bibliographic reference for the resource."
+    Comment = "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/n"
+    Datatype = "http://www.w3.org/2000/01/rdf-schema#Literal"
+    Language = ""
+    
+    [Access.Publisher]
+    Label = "Publisher"
+    Qualifier = [ "IdentifierType" ]
+    URI = "http://purl.org/dc/terms/publisher"
+    Definition = "An entity responsible for making the resource available."
+    Comment = "Use any kind of identifier or URI if possible and state which one if necessary. Otherwise, use free text."
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/1"
+    Datatype = "http://purl.org/dc/terms/Agent ; URI/identifier or text"
+    Language = "eng"
+
+    [Access.Rights]
+    Label = "Rights"
+    URI = "http://purl.org/dc/terms/rights"
+    Definition = "Information about rights held in and over the resource."
+    Comment = "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URL/URI. If this is not possible or feasible, use free text."
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/n"
+    Datatype = "http://purl.org/dc/terms/RightsStatement ; URI or text"
+    Language = "eng"
+
+    [Access.RightsHolder]
+    Label = "Rights Holder"
+    Qualifier = [ "IdentityType" ]
+    URI = "http://purl.org/dc/terms/rightsHolder"
+    Definition = "A person or organization owning or managing rights over the resource."
+    Comment = "Recommended practice is to refer to the rights holder with a URI or identifier. Please state the type of identifier if necessary. If this is not possible or feasible, provide free text."
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/n"
+    Datatype = "http://purl.org/dc/terms/Agent ; URI, identifier or text"
+    Language = ""
+    
+    [Access.DateAvailable]
+    Label = "Date Available"
+    URI = "http://purl.org/dc/terms/available"
+    Definition = "Date that the resource became or will become available."
+    Comment = "Please use ISO 8601 format."
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/1"
+    Datatype = "http://purl.org/dc/terms/W3CDTF, ISO_8601"
+    Language = ""
+    
+    [Access.IsReferencedBy]
+    Label = "Is Referenced By"
+    Qualifier = [ "DocumentType", "IdentifierType" ]
+    URI = "http://purl.org/dc/terms/isReferencedBy"
+    Definition = "A related resource (paper, data set) that references, cites, or otherwise points to the described resource."
+    Comment = "Recommended practice is to refer to the resource using a Persistent Identifier or a URI. Please state the type of PID if used (ISBN, DOI, ...). For document type, you can e.g. use http://vocabularies.coe.int/class-types/"
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/n"
+    Datatype = "PID / similar identifier, or text"
+    Language = "eng"
+
+
+    
+#Provenance
+[Provenance]
+
+    [Provenance.DateCreated]
+    Label = "Date Created"
+    URI = "http://purl.org/dc/terms/created"
+    Definition = "Date of creation of the resource."
+    Comment = "Recommended practice is to describe the date, date/time or ideally period of time using ISO_8601 format."
+    Type = "property"
+    Obligation = "recommended"
+    Occurrence = "0/1"
+    Datatype = "http://purl.org/dc/terms/W3CDTF, ISO_8601"
+    Language = ""
+
+    [Provenance.Creator]
+    Label = "Creator"
+    Qualifier = [ "IdentifierType" ]
+    URI = "http://purl.org/dc/terms/creator"
+    Definition = "An entity responsible for making the resource."
+    Comment = "Recommended practice is to identify the creator with an identifier (such as ORCID, GND - please sate which one you used) or URI. If this is not possible or feasible, a literal value that identifies the creator may be provided."
+    Type = "property"
+    Obligation = "recommended"
+    Occurrence = "0/n"
+    Datatype = "'ORCID' https://orcid.org/Alternatives | 'Gemeinsame Normdatei' https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html"
+    Language = ""
+    
+    [Provenance.Contributor]
+    Label = "Contributor"
+    Qualifier = [ "IdentifierType" ]
+    URI = "http://purl.org/dc/terms/contributor"
+    Definition = "An entity responsible for making contributions to the resource."
+    Comment = "Recommended practice is to identify a contributor with an identifier (such as ORCID, GND - please sate which one you used) or URI. If this is not possible or feasible, a literal value that identifies the creator may be provided."
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/n"
+    Datatype = "'ORCID' https://orcid.org/Alternatives | 'Gemeinsame Normdatei' https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html"
+    Language = ""
+    
+    [Provenance.Provenance]
+    Label = "Provenance"
+    URI = "http://purl.org/dc/terms/provenance"
+    Definition = "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation."
+    Comment = "The statement may include a description of any changes successive custodians made to the resource."
+    Type = "property"
+    Obligation = "recommended"
+    Occurrence = "0/n"
+    Datatype = "http://purl.org/dc/terms/ProvenanceStatement"
+    Language = "eng"
+    
+    [Provenance.Source]
+    Label = "Source"
+    Qualifier = [ "IdentifierType"  ]
+    URI = "http://purl.org/dc/terms/source"
+    Definition = "A related resource from which the described resource is derived."
+    Comment = "The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system (DOI, ISBN, ... - please state which one was used if necessary)."
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/n"
+    Datatype = "URI, or text"
+    Language = "eng"
+    
+    [Provenance.IsPartOf]
+    Label = "Is Part Of"
+    Qualifier = [ "IdentifierType" ]
+    URI = "http://purl.org/dc/terms/isPartOf"
+    Definition = "A related resource in which the described resource is physically or logically included."
+    Comment = "The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system (DOI, ISBN, ... - please state which one was used if necessary)."
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/n"
+    Datatype = "PID such as URI, URN, DOI..."
+    Language = ""
+    
+    [Provenance.IsVersionOf]
+    Label = "Is Version Of"
+    Qualifier = [ "IdentifierType" ]
+    URI = ""
+    Definition = "A related resource of which the described resource is a version, edition, or adaptation."
+    Comment = "Changes in version imply substantive changes in content rather than differences in format. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system (DOI, ISBN, ... - please state which one was used if necessary)."
+    Type = "property"
+    Obligation = "optional"
+    Occurrence = "0/1"
+    Datatype = "identifier or text"
+    Language = "eng"
+
+    [Provenance.AccrualMethod]
+    Label = "Accrual Method"
+    URI = "http://purl.org/dc/terms/accrualMethod"
+    Definition = "The method by which items are added to the collection/dataset."
+    Comment = "Please use a value from the Collection Description Accrual Method Vocabulary (Deposit, Donation, Purchase, Loan, License, Item Creation)"
+    Type = "property"
+    Obligation = " optional"
+    Occurrence = "0/n"
+    Datatype = "http://purl.org/dc/terms/MethodOfAccrual from https://www.dublincore.org/specifications/dublin-core/collection-description/accrual-method/"
+    Language = "eng"
+    
+
+# -------------------------
+# Label = dient der menschenlesbaren Bezeichnung des Terms
+# URI = identifiziert den Term in Form eines URI
+# Definition = beschreibt das Konzept und die Art des Terms
+# Comment = zusätzliche Informationen über den Term oder seine Verwendung
+# Type = Property, Class, Vocabulary Encoding Scheme, Syntax Encoding Scheme
+# Obligation = “mandatory”, “optional”, “recommended”
+# Occurrence = Angaben zur Wiederholbarkeit (min/max)
+# Datatype = Möglicher Wertebereich inkl. kontrollierter Vokabulare
+# Language = Sprache nach ISO 639-3
