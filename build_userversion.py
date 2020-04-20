@@ -5,32 +5,32 @@ OUT_FILE = "project_metadata_schema_userversion.txt"
 
 
 HEADER = """
-#Project metadata
+# Project metadata
 #
-#Schema verson: {version}
-#Schema file: {schema}
+# Schema verson: {version}
+# Schema file: {schema}
 #
 
 """
 
 FOOTER = """
 
-----------------------------
-Anmerkungen:
-Bitte Freitext stets in Englisch ausfüllen, außer es ist explizit anders angegeben.
-Falls Sie ein Attribut mehrfach ausfüllen wollen, kopieren Sie einfach den entsprechenden Block und fügen Sie ihn erneut ins Dokument ein.
-Bei Fragen wenden Sie sich gerne jederzeit an das KompetenzWerkD, z.B. per Mail: kompetenzwerkd@saw-leipzig.de
-
-Für Datumsangaben empfehlen wir stets den Standard ISO 8601.
-Eine Einführung bietet beispielsweise Wikipedia: https://de.wikipedia.org/wiki/ISO_8601
-Mögliche Schemata, die Sie verwenden können, sind zum Beispiel:
-YYYY-MM-DD
-YYYY-MM
-YYYY
-oder für Zeitspannen:
-YYYY-MM-DD/YYYY-MM-DD
-YYYY-MM/YYYY-MM
-YYYY/YYYY
+# ----------------------------
+# Anmerkungen:
+# Bitte Freitext stets in Englisch ausfüllen, außer es ist explizit anders angegeben.
+# Falls Sie ein Attribut mehrfach ausfüllen wollen, kopieren Sie einfach den entsprechenden Block und fügen Sie ihn erneut ins Dokument ein.
+# Bei Fragen wenden Sie sich gerne jederzeit an das KompetenzWerkD, z.B. per Mail: kompetenzwerkd@saw-leipzig.de
+#
+# Für Datumsangaben empfehlen wir stets den Standard ISO 8601.
+# Eine Einführung bietet beispielsweise Wikipedia: https://de.wikipedia.org/wiki/ISO_8601
+# Mögliche Schemata, die Sie verwenden können, sind zum Beispiel:
+# YYYY-MM-DD
+# YYYY-MM
+# YYYY
+# oder für Zeitspannen:
+# YYYY-MM-DD/YYYY-MM-DD
+# YYYY-MM/YYYY-MM
+# YYYY/YYYY
 """
 
 OCCURRENCE = {
@@ -68,16 +68,23 @@ def build_userversion(schema):
                 continue
 
             
-            f.write("#{} \n\n".format(section))
+            f.write("# {} \n\n".format(section))
 
             for prop in properties.values():
 
                 f.write("{}=\"\"\n".format(prop["Label"]))
-                f.write("Definition: {}\n".format(prop["Definition"]))
+                if "Qualifier" in prop:
+                    f.write(prop["Qualifier"] + "=\"\"\n")
+                f.write("# Definition: {}\n".format(prop["Definition"]))
 
-                f.write("Obligation: {}, {}\n\n".format(
+                f.write("# Obligation: {}, {}\n".format(
                     prop["Obligation"], OCCURRENCE[prop["Occurrence"]]
                 ))
+                if "Hint" in prop:
+                    f.write(prop["Hint"]+"\n")
+                else:
+                    f.write("\n")
+                
         
         f.write(FOOTER)
 

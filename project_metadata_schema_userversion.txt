@@ -1,83 +1,98 @@
 
-#Project metadata
+# Project metadata
 #
-#Schema verson: 0.1
-#Schema file: project_metadata_schema.toml
+# Schema verson: 0.2
+# Schema file: project_metadata_schema.toml
 #
 
-#General 
+# General 
 
 Name=""
-Definition: The name of the project.
-Obligation: mandatory, exactly once
+# Definition: The name of the project.
+# Obligation: mandatory, exactly once
 
 Identifier=""
-Definition: The identifier property represents any kind of identifier for this project.
-Obligation: mandatory, exactly once
+# Definition: The identifier property represents any kind of identifier for this project.
+# Obligation: mandatory, exactly once
 
 Url=""
-Definition: URL of this project.
-Obligation: recommended, once
+# Definition: URL of this project.
+# Obligation: recommended, once
 
 StartDate=""
-Definition: The start date and time of this project (in ISO 8601 date format).
-Obligation: mandatory, exactly once
+# Definition: The start date and time of this project (in ISO 8601 date format).
+# Obligation: mandatory, exactly once
 
 EndDate=""
-Definition: The end date and time of this project (in ISO 8601 date format).
-Obligation: recommended, once
-
-FundingAgency=""
-Definition: Organization providing project funding.
-Obligation: recommended, once
+# Definition: The end date and time of this project (in ISO 8601 date format).
+# Obligation: recommended, once
 
 Description=""
-Definition: A description of the project.
-Obligation: mandatory, exactly once
+# Definition: A description of the project in English.
+# Obligation: mandatory, exactly once
 
-#Organization 
+Beschreibung=""
+# Definition: A description of the project in German.
+# Obligation: mandatory, exactly once
+
+# Organization 
 
 ParentOrganization=""
-Definition: The organization responsible for this project.
-Obligation: mendatory, at least once
+IdentifierType=""
+# Definition: The organization responsible for this project.
+# Obligation: mendatory, at least once
 
 MemberOf=""
-Definition: An Organization to which this project is affiliated.
-Obligation: optional, any number of times
+IdentifierType=""
+# Definition: An Organization to which this project is affiliated.
+# Obligation: optional, any number of times
+
+FundingAgency=""
+IdentifierType=""
+# Definition: Organization providing project funding.
+# Obligation: recommended, once
 
 ProjectLeader=""
-Definition: Person in charge of this project.
-Obligation: mendatory, at least once
-
+IdentifierType=""
+# Definition: Person in charge of this project.
+# Obligation: mendatory, at least once
+    # Possible Vocabularies:
+    # ORCID - https://orcid.org/Alternatives
+    # GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
+    
 Employee=""
-Definition: Someone working in this project.
-Obligation: recommended, any number of times
-
-#Contact 
+IdentifierType=""
+# Definition: Someone working in this project.
+# Obligation: recommended, any number of times
+    # Possible Vocabularies:
+    # ORCID - https://orcid.org/Alternatives
+    # GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
+    
+# Contact 
 
 Email=""
-Definition: Email address.
-Obligation: mandatory, at least once
+# Definition: Email address.
+# Obligation: mandatory, at least once
 
 Address=""
-Definition: Physical address.
-Obligation: mandatory, at least once
+# Definition: Physical address.
+# Obligation: mandatory, at least once
 
 
 
-----------------------------
-Anmerkungen:
-Bitte Freitext stets in Englisch ausfüllen, außer es ist explizit anders angegeben.
-Falls Sie ein Attribut mehrfach ausfüllen wollen, kopieren Sie einfach den entsprechenden Block und fügen Sie ihn erneut ins Dokument ein.
-Bei Fragen wenden Sie sich gerne jederzeit an das KompetenzWerkD, z.B. per Mail: kompetenzwerkd@saw-leipzig.de
-
-Für Datumsangaben empfehlen wir stets den Standard ISO 8601.
-Eine Einführung bietet beispielsweise Wikipedia: https://de.wikipedia.org/wiki/ISO_8601
-Mögliche Schemata, die Sie verwenden können, sind zum Beispiel:
-YYYY-MM-DD
-YYYY-MM
-YYYY
-oder für Zeitspannen:
-YYYY-MM-DD/YYYY-MM-DD
-YYYY-MM/YYYY-MM
-YYYY/YYYY
+# ----------------------------
+# Anmerkungen:
+# Bitte Freitext stets in Englisch ausfüllen, außer es ist explizit anders angegeben.
+# Falls Sie ein Attribut mehrfach ausfüllen wollen, kopieren Sie einfach den entsprechenden Block und fügen Sie ihn erneut ins Dokument ein.
+# Bei Fragen wenden Sie sich gerne jederzeit an das KompetenzWerkD, z.B. per Mail: kompetenzwerkd@saw-leipzig.de
+#
+# Für Datumsangaben empfehlen wir stets den Standard ISO 8601.
+# Eine Einführung bietet beispielsweise Wikipedia: https://de.wikipedia.org/wiki/ISO_8601
+# Mögliche Schemata, die Sie verwenden können, sind zum Beispiel:
+# YYYY-MM-DD
+# YYYY-MM
+# YYYY
+# oder für Zeitspannen:
+# YYYY-MM-DD/YYYY-MM-DD
+# YYYY-MM/YYYY-MM
+# YYYY/YYYY

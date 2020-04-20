@@ -1,6 +1,6 @@
 [Metadata]
-Changed = "15.04.2015"
-Version = "0.1"
+Changed = "20.04.2020"
+Version = "0.2"
 
 #Namespace= schema.org
 
@@ -89,29 +89,29 @@ Version = "0.1"
     Obligation = "recommended"
     Occurrence = "0/1"
     Vocabulary_Datatype = "Date"
-    Language = ""
-
-    [General.FundingAgency]
-    Label = "FundingAgency"
-    URI = "???"
-    Definition = "Organization providing project funding."
-    Comment = ""
-    Type = "property"
-    Obligation = "recommended"
-    Occurrence = "0/1"
-    Vocabulary_Datatype = "Date"
-    Language = ""
+    Language = "eng"
 
     [General.Description]
     Label = "Description"
     URI = "https://schema.org/description"
-    Definition = "A description of the project."
+    Definition = "A description of the project in English."
     Comment = ""
     Type = "property"
     Obligation = "mandatory"
     Occurrence = "1/1"
     Vocabulary_Datatype = "Text"
-    Language = ""
+    Language = "eng"
+
+    [General.Beschreibung]
+    Label = "Beschreibung"
+    URI = "https://schema.org/description"
+    Definition = "A description of the project in German."
+    Comment = ""
+    Type = "property"
+    Obligation = "mandatory"
+    Occurrence = "1/1"
+    Vocabulary_Datatype = "Text"
+    Language = "deu"
 
 
 [Organization]
@@ -125,7 +125,8 @@ Version = "0.1"
     Obligation = "mendatory"
     Occurrence = "1/n"
     Vocabulary_Datatype = "Organization"
-    Language = ""
+    Language = "eng"
+    Qualifier = "IdentifierType"
 
     [Organization.MemberOf]
     Label = "MemberOf"
@@ -136,7 +137,20 @@ Version = "0.1"
     Obligation = "optional"
     Occurrence = "0/n"
     Vocabulary_Datatype = "Organization"
-    Language = ""
+    Language = "eng"
+    Qualifier = "IdentifierType"
+
+    [Organization.FundingAgency]
+    Label = "FundingAgency"
+    URI = "???"
+    Definition = "Organization providing project funding."
+    Comment = ""
+    Type = "property"
+    Obligation = "recommended"
+    Occurrence = "0/1"
+    Vocabulary_Datatype = "Date"
+    Language = "eng"
+    Qualifier = "IdentifierType"
 
     [Organization.ProjectLeader]
     Label = "ProjectLeader"
@@ -147,7 +161,14 @@ Version = "0.1"
     Obligation = "mendatory"
     Occurrence = "1/n"
     Vocabulary_Datatype = "Person"
-    Language = ""
+    Language = "eng"
+    Qualifier = "IdentifierType"
+    Hint = """
+    # Possible Vocabularies:
+    # ORCID - https://orcid.org/Alternatives
+    # GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
+    """
+    
 
     [Organization.Employee]
     Label = "Employee"
@@ -158,8 +179,13 @@ Version = "0.1"
     Obligation = "recommended"
     Occurrence = "0/n"
     Vocabulary_Datatype = "Person"
-    Language = ""
-
+    Language = "eng"
+    Qualifier = "IdentifierType"
+    Hint = """
+    # Possible Vocabularies:
+    # ORCID - https://orcid.org/Alternatives
+    # GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
+    """
 
 [Contact]
 
@@ -172,7 +198,7 @@ Version = "0.1"
     Obligation = "mandatory"
     Occurrence = "1/n"
     Vocabulary_Datatype = "Text"
-    Language = ""
+    Language = "eng"
 
     [Contact.Address]
     Label = "Address"
@@ -183,4 +209,4 @@ Version = "0.1"
     Obligation = "mandatory"
     Occurrence = "1/n"
     Vocabulary_Datatype= "Text"
-    Language = ""
+    Language = "eng"
