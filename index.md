@@ -1,9 +1,9 @@
 
-Hier weden Schemas und Templates für die strukturierte Erfassung von Metadaten zu Forschungsprojekte und -datensätze bereitgestellt.
+Hier weden Schemas und Templates für die strukturierte Erfassung von Metadaten zu Forschungsprojekten und -datensätzen bereitgestellt.
 
 |   |  Schema | Template  |  Version |
 |---|---|---| --- |
-| Forschunfsdaten  |  [Schema](schemas/dcmi_dataset_pofile.toml) | [Template](templates/dcmi_dataset_pofile.txt)  |  0.2 |
+| Forschungsdaten  |  [Schema](schemas/dcmi_dataset_pofile.toml) | [Template](templates/dcmi_dataset_pofile.txt)  |  0.2 |
 | Forschungsprojekte  |  [Schema](schemas/project_metadata_schema.toml) | [Template](templates/project_metadata_schema.txt)  | 0.2 |
 
 
