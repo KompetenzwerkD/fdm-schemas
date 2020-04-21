@@ -83,6 +83,8 @@ def build_userversion(schema, out_file):
                 f.write("# Obligation: {}, {}\n".format(
                     prop["Obligation"], OCCURRENCE[prop["Occurrence"]]
                 ))
+                if prop["Comment"]:
+                    f.write("# Comment: {}\n".format(prop["Comment"]))
                 if "Hint" in prop:
                     f.write(prop["Hint"]+"\n")
                 else:

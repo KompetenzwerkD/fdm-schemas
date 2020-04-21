@@ -14,7 +14,7 @@ Name=""
 
 Identifier=""
 # Definition: The identifier property represents any kind of identifier for this project.
-# Datatype: Text/Url
+# Datatype: URI, Text
 # Obligation: mandatory, exactly once
 
 Url=""
@@ -47,25 +47,31 @@ Beschreibung=""
 ParentOrganization=""
 IdentifierType=""
 # Definition: The organization responsible for this project.
-# Datatype: Organization
+# Datatype: URI, Text
 # Obligation: mendatory, at least once
-
+    # Possible Identifiers:
+    # VIAF - http://viaf.org/
+    
 MemberOf=""
 IdentifierType=""
 # Definition: An Organization to which this project is affiliated.
-# Datatype: Organization
+# Datatype: URI, Text
 # Obligation: optional, any number of times
-
+    # Possible Identifiers:
+    # VIAF - http://viaf.org/
+    
 FundingAgency=""
 IdentifierType=""
 # Definition: Organization providing project funding.
-# Datatype: Date
+# Datatype: URI, Text
 # Obligation: recommended, once
-
+    # Possible Identifiers:
+    # VIAF - http://viaf.org/
+    
 ProjectLeader=""
 IdentifierType=""
 # Definition: Person in charge of this project.
-# Datatype: Person
+# Datatype: URI, Text
 # Obligation: mendatory, at least once
     # Possible Vocabularies:
     # ORCID - https://orcid.org/Alternatives
@@ -74,7 +80,7 @@ IdentifierType=""
 Employee=""
 IdentifierType=""
 # Definition: Someone working in this project.
-# Datatype: Person
+# Datatype: URI, Text
 # Obligation: recommended, any number of times
     # Possible Vocabularies:
     # ORCID - https://orcid.org/Alternatives

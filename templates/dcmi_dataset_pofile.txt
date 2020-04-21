@@ -21,17 +21,20 @@ Description=""
 # Definition: An account of the resource in English.
 # Datatype: Text
 # Obligation: mandatory, exactly once
+# Comment: Description may include but is not limited to ='an abstract, a table of contents, a graphical representation, or a free-text account of the resource'.
 
 Beschreibung=""
 # Definition: An account of the resource in German.
 # Datatype: Text
 # Obligation: mandatory, exactly once
+# Comment: Description may include but is not limited to = 'an abstract, a table of contents, a graphical representation, or a free-text account of the resource'.
 
 Subject=""
 IdentifierType=""
 # Definition: A topic or scientific field of the resource.
 # Datatype: ID
 # Obligation: recommended, any number of times
+# Comment: Please use a standard vocabulary for identifying the subject, we suggest using SKOS or Universal Decimal Classification. Please also state which authority file you used.
     # Possible Vocabularies:
     # "Universal Decimal Classification" http://www.udcsummary.info/php/index.php?lang=en
     # "SKOS UNESCO Nomenclature" https://skos.um.es/unesco6/
@@ -43,6 +46,7 @@ IdentifierType=""
 # Definition: Spatial characteristics of the resource.
 # Datatype: ID
 # Obligation: optional, any number of times
+# Comment: Try to use an authority file or geographic reference system described below and sate which one was utilized.
     # Possible Vocabularies
     # "GND ID" https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html http://swb.bsz-bw.de/DB=2.104/
     # "Getty Thesaurus of Geographic Names" http://www.getty.edu/research/tools/vocabularies/tgn/index.html
@@ -54,11 +58,13 @@ Temporal Coverage=""
 # Definition: Temporal characteristics of the resource.
 # Datatype: ISO_8601
 # Obligation: optional, any number of times
+# Comment: Please use ISO_8601 format.
 
 Language=""
 # Definition: A language of the resource.
 # Datatype: ISO 639-3 https://iso639-3.sil.org/code_tables/639/data/all
 # Obligation: optional, any number of times
+# Comment: Please use a value representing a language from the controlled vocabulary ISO 639-3.
 
 # Format 
 
@@ -66,6 +72,7 @@ Type=""
 # Definition: The nature or genre of the resource.
 # Datatype: DCMI-Type (Collection, Dataset, Event, Image, InteractiveResource, MovingImage, PhysicalObject, Service, Software, Sound, StillImage, Text), see https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/
 # Obligation: recommended, any number of times
+# Comment: Please use the controlled vocabulary of the Dublin Core Type Vocabulary
 
 Medium=""
 # Definition: The material or physical carrier of the resource as free text.
@@ -76,11 +83,13 @@ Format=""
 # Definition: The file format or physical medium.
 # Datatype: IANA Media Types https://www.iana.org/assignments/media-types/media-types.xhtml
 # Obligation: recommended, any number of times
+# Comment: If stating file formats please use a name from the list of Media Types of IANA. Otherwise use free text.
 
 Conforms To=""
 # Definition: An established standard to which the described resource conforms.
 # Datatype: http://purl.org/dc/terms/Standard , URI or free text
 # Obligation: optional, any number of times
+# Comment: Use free text or an URL/URI if possible.
 
 # Access 
 
@@ -89,43 +98,51 @@ IdentifierType=""
 # Definition: An unambiguous reference to the resource within a given context.
 # Datatype: http://www.w3.org/2000/01/rdf-schema#Literal ; PID such as DOI, URN, ISBN...
 # Obligation: recommended, any number of times
+# Comment: ecommended practice is to identify the resource by means of a string conforming to an identification system (using a Persistent Identifier - PID. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs. Please also state the type of PID (ISBN, DOI,...). Alternatively, state the URL the resource is/will be available at.
 
 License=""
 # Definition: A legal document giving official permission to do something with the resource.
 # Datatype: URI (http://purl.org/dc/dcmitype/InteractiveResource) or free text
 # Obligation: recommended, once
+# Comment: Recommended practice is to identify the license document with a link (URL/URI). Otherwise use free text.
 
 Access Rights=""
 # Definition: Information about who can access the resource or an indication of its security status as free text.
 # Datatype: http://purl.org/dc/terms/RightsStatement, free text
 # Obligation: recommended, any number of times
+# Comment: Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.
 
 Bibliographic Citation=""
 # Definition: A bibliographic reference for the resource.
 # Datatype: http://www.w3.org/2000/01/rdf-schema#Literal
 # Obligation: optional, any number of times
+# Comment: Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.
 
 Publisher=""
 IdentifierType=""
 # Definition: An entity responsible for making the resource available.
 # Datatype: http://purl.org/dc/terms/Agent ; URI/identifier or text
 # Obligation: optional, once
+# Comment: Use any kind of identifier or URI if possible and state which one if necessary. Otherwise, use free text.
 
 Rights=""
 # Definition: Information about rights held in and over the resource.
 # Datatype: http://purl.org/dc/terms/RightsStatement ; URI or text
 # Obligation: optional, any number of times
+# Comment: Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a URL/URI. If this is not possible or feasible, use free text.
 
 Rights Holder=""
 IdentityType=""
 # Definition: A person or organization owning or managing rights over the resource.
 # Datatype: http://purl.org/dc/terms/Agent ; URI, identifier or text
 # Obligation: optional, any number of times
+# Comment: Recommended practice is to refer to the rights holder with a URI or identifier. Please state the type of identifier if necessary. If this is not possible or feasible, provide free text.
 
 Date Available=""
 # Definition: Date that the resource became or will become available.
 # Datatype: http://purl.org/dc/terms/W3CDTF, ISO_8601
 # Obligation: optional, once
+# Comment: Please use ISO 8601 format.
 
 Is Referenced By=""
 DocumentType=""
@@ -133,6 +150,7 @@ IdentifierType=""
 # Definition: A related resource (paper, data set) that references, cites, or otherwise points to the described resource.
 # Datatype: PID / similar identifier, or text
 # Obligation: optional, any number of times
+# Comment: Recommended practice is to refer to the resource using a Persistent Identifier or a URI. Please state the type of PID if used (ISBN, DOI, ...). For document type, you can e.g. use http://vocabularies.coe.int/class-types/
 
 # Provenance 
 
@@ -140,46 +158,54 @@ Date Created=""
 # Definition: Date of creation of the resource.
 # Datatype: http://purl.org/dc/terms/W3CDTF, ISO_8601
 # Obligation: recommended, once
+# Comment: Recommended practice is to describe the date, date/time or ideally period of time using ISO_8601 format.
 
 Creator=""
 IdentifierType=""
 # Definition: An entity responsible for making the resource.
 # Datatype: 'ORCID' https://orcid.org/Alternatives | 'Gemeinsame Normdatei' https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
 # Obligation: recommended, any number of times
+# Comment: Recommended practice is to identify the creator with an identifier (such as ORCID, GND - please sate which one you used) or URI. If this is not possible or feasible, a literal value that identifies the creator may be provided.
 
 Contributor=""
 IdentifierType=""
 # Definition: An entity responsible for making contributions to the resource.
 # Datatype: 'ORCID' https://orcid.org/Alternatives | 'Gemeinsame Normdatei' https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
 # Obligation: optional, any number of times
+# Comment: Recommended practice is to identify a contributor with an identifier (such as ORCID, GND - please sate which one you used) or URI. If this is not possible or feasible, a literal value that identifies the creator may be provided.
 
 Provenance=""
 # Definition: A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.
 # Datatype: http://purl.org/dc/terms/ProvenanceStatement
 # Obligation: recommended, any number of times
+# Comment: The statement may include a description of any changes successive custodians made to the resource.
 
 Source=""
 IdentifierType=""
 # Definition: A related resource from which the described resource is derived.
 # Datatype: URI, or text
 # Obligation: optional, any number of times
+# Comment: The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system (DOI, ISBN, ... - please state which one was used if necessary).
 
 Is Part Of=""
 IdentifierType=""
 # Definition: A related resource in which the described resource is physically or logically included.
 # Datatype: PID such as URI, URN, DOI...
 # Obligation: optional, any number of times
+# Comment: The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system (DOI, ISBN, ... - please state which one was used if necessary).
 
 Is Version Of=""
 IdentifierType=""
 # Definition: A related resource of which the described resource is a version, edition, or adaptation.
 # Datatype: identifier or text
 # Obligation: optional, once
+# Comment: Changes in version imply substantive changes in content rather than differences in format. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system (DOI, ISBN, ... - please state which one was used if necessary).
 
 Accrual Method=""
 # Definition: The method by which items are added to the collection/dataset.
 # Datatype: http://purl.org/dc/terms/MethodOfAccrual from https://www.dublincore.org/specifications/dublin-core/collection-description/accrual-method/
 # Obligation:  optional, any number of times
+# Comment: Please use a value from the Collection Description Accrual Method Vocabulary (Deposit, Donation, Purchase, Loan, License, Item Creation)
 
 
 

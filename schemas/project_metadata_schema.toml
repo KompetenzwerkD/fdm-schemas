@@ -57,7 +57,7 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "mandatory"
     Occurrence = "1/1"
-    Datatype = "Text/Url"
+    Datatype = "URI, Text"
     Language = ""
 
     [General.Url]
@@ -126,9 +126,13 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "mendatory"
     Occurrence = "1/n"
-    Datatype = "Organization"
+    Datatype = "URI, Text"
     Language = "eng"
     Qualifier = [ "IdentifierType" ]
+    Hint = """
+    # Possible Identifiers:
+    # VIAF - http://viaf.org/
+    """
 
     [Organization.MemberOf]
     Label = "MemberOf"
@@ -138,9 +142,13 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "optional"
     Occurrence = "0/n"
-    Datatype = "Organization"
+    Datatype = "URI, Text"
     Language = "eng"
     Qualifier = [ "IdentifierType"]
+    Hint = """
+    # Possible Identifiers:
+    # VIAF - http://viaf.org/
+    """
 
     [Organization.FundingAgency]
     Label = "FundingAgency"
@@ -150,9 +158,13 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "recommended"
     Occurrence = "0/1"
-    Datatype = "Date"
+    Datatype = "URI, Text"
     Language = "eng"
     Qualifier = [ "IdentifierType" ]
+    Hint = """
+    # Possible Identifiers:
+    # VIAF - http://viaf.org/
+    """
 
     [Organization.ProjectLeader]
     Label = "ProjectLeader"
@@ -162,7 +174,7 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "mendatory"
     Occurrence = "1/n"
-    Datatype = "Person"
+    Datatype = "URI, Text"
     Language = "eng"
     Qualifier = [ "IdentifierType" ]
     Hint = """
@@ -180,7 +192,7 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Type = "property"
     Obligation = "recommended"
     Occurrence = "0/n"
-    Datatype = "Person"
+    Datatype = "URI, Text"
     Language = "eng"
     Qualifier = [ "IdentifierType" ]
     Hint = """
