@@ -1,5 +1,5 @@
 
-Hier weden Schemas und Templates für die strukturierte Erfassung von Metadaten zu Forschungsprojekten und -datensätzen bereitgestellt.
+Hier werden Schemas und Templates für die strukturierte Erfassung von Metadaten zu Forschungsprojekten und -datensätzen bereitgestellt.
 
 |   |  Schema (.toml Format) | Template |  Version |
 |---|---|---| --- |
