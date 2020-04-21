@@ -76,8 +76,9 @@ def build_userversion(schema, out_file):
 
                 f.write("{}=\"\"\n".format(prop["Label"]))
                 if "Qualifier" in prop:
+                    f.write("# Qualifier:\n")
                     for qualifier in prop["Qualifier"]:
-                        f.write(qualifier + "=\"\"\n")
+                        f.write("    " + qualifier + "=\"\"\n")
                 f.write("# Definition: {}\n".format(prop["Definition"]))
                 f.write("# Datatype: {}\n".format(prop["Datatype"]))
                 f.write("# Obligation: {}, {}\n".format(

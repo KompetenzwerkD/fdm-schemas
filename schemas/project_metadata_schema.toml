@@ -1,10 +1,10 @@
 [Metadata]
 Title = "Project Metadata"
-Changed = "20.04.2020"
-Version = "0.2"
+Changed = "21.04.2020"
+Version = "0.3"
 Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/schemas/project_metadata_schema.toml"
 
-#Namespace= schema.org
+#Namespaces = schema.org
 
 #overview=
 #
@@ -72,25 +72,25 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Language = ""
 
     [General.StartDate]
-    Label = "StartDate"
+    Label = "Start Date"
     URI = "https://schema.org/startDate"
     Definition = "The start date and time of this project (in ISO 8601 date format)."
     Comment = ""
     Type = "property"
     Obligation = "mandatory"
     Occurrence = "1/1"
-    Datatype = "Date"
+    Datatype = "Date (ISO_8601)"
     Language = ""
 
     [General.EndDate]
-    Label = "EndDate"
+    Label = "End Date"
     URI = "https://schema.org/endDate"
     Definition = "The end date and time of this project (in ISO 8601 date format)."
     Comment = ""
     Type = "property"
     Obligation = "recommended"
     Occurrence = "0/1"
-    Datatype = "Date"
+    Datatype = "Date (ISO_8601)"
     Language = "eng"
 
     [General.Description]
@@ -119,66 +119,66 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
 [Organization]
 
     [Organization.ParentOrganization]
-    Label = "ParentOrganization"
+    Label = "Parent Organization"
     URI = "https://schema.org/parentOrganization"
-    Definition = "The organization responsible for this project."
+    Definition = "The organization (ID) responsible for this project."
     Comment = ""
     Type = "property"
     Obligation = "mendatory"
     Occurrence = "1/n"
-    Datatype = "URI, Text"
+    Datatype = "ID"
     Language = "eng"
-    Qualifier = [ "IdentifierType" ]
+    Qualifier = [ "IdentifierType", "Label" ]
     Hint = """
-    # Possible Identifiers:
+    # Recomnended Identifier:
     # VIAF - http://viaf.org/
     """
 
     [Organization.MemberOf]
-    Label = "MemberOf"
+    Label = "Member Of"
     URI = "https://schema.org/memberOf"
-    Definition = "An Organization to which this project is affiliated." 
+    Definition = "An Organization (ID) to which this project is affiliated." 
     Comment = ""
     Type = "property"
     Obligation = "optional"
     Occurrence = "0/n"
-    Datatype = "URI, Text"
+    Datatype = "ID"
     Language = "eng"
-    Qualifier = [ "IdentifierType"]
+    Qualifier = [ "IdentifierType", "Label" ]
     Hint = """
-    # Possible Identifiers:
+    # Recomnended Identifier:
     # VIAF - http://viaf.org/
     """
 
     [Organization.FundingAgency]
-    Label = "FundingAgency"
+    Label = "Funding Agency"
     URI = "???"
-    Definition = "Organization providing project funding."
+    Definition = "Organization (ID) providing project funding."
     Comment = ""
     Type = "property"
     Obligation = "recommended"
     Occurrence = "0/1"
-    Datatype = "URI, Text"
+    Datatype = "ID"
     Language = "eng"
-    Qualifier = [ "IdentifierType" ]
+    Qualifier = [ "IdentifierType", "Label" ]
     Hint = """
-    # Possible Identifiers:
+    # Recomnended Identifier:
     # VIAF - http://viaf.org/
     """
 
     [Organization.ProjectLeader]
-    Label = "ProjectLeader"
+    Label = "Project Leader"
     URI = "???"
-    Definition = "Person in charge of this project."
+    Definition = "Person (ID) in charge of this project."
     Comment = ""
     Type = "property"
     Obligation = "mendatory"
     Occurrence = "1/n"
-    Datatype = "URI, Text"
+    Datatype = "ID"
     Language = "eng"
-    Qualifier = [ "IdentifierType" ]
+    Qualifier = [ "IdentifierType", "Label" ]
     Hint = """
-    # Possible Vocabularies:
+    # Recomnended Identifiers:
     # ORCID - https://orcid.org/Alternatives
     # GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
     """
@@ -187,16 +187,16 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     [Organization.Employee]
     Label = "Employee"
     URI = "https://schema.org/employee"
-    Definition = "Someone working in this project."
+    Definition = "Person (ID) working in this project."
     Comment = ""
     Type = "property"
     Obligation = "recommended"
     Occurrence = "0/n"
-    Datatype = "URI, Text"
+    Datatype = "ID"
     Language = "eng"
-    Qualifier = [ "IdentifierType" ]
+    Qualifier = [ "IdentifierType","Label" ]
     Hint = """
-    # Possible Vocabularies:
+    # Recommended Identifiers:
     # ORCID - https://orcid.org/Alternatives
     # GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
     """

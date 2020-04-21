@@ -1,7 +1,7 @@
 
 # Project Metadata
 #
-# Schema verson: 0.2
+# Schema verson: 0.3
 # Schema file: https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/schemas/project_metadata_schema.toml
 #
 
@@ -22,14 +22,14 @@ Url=""
 # Datatype: Url
 # Obligation: recommended, once
 
-StartDate=""
+Start Date=""
 # Definition: The start date and time of this project (in ISO 8601 date format).
-# Datatype: Date
+# Datatype: Date (ISO_8601)
 # Obligation: mandatory, exactly once
 
-EndDate=""
+End Date=""
 # Definition: The end date and time of this project (in ISO 8601 date format).
-# Datatype: Date
+# Datatype: Date (ISO_8601)
 # Obligation: recommended, once
 
 Description=""
@@ -44,45 +44,55 @@ Beschreibung=""
 
 # Organization 
 
-ParentOrganization=""
-IdentifierType=""
-# Definition: The organization responsible for this project.
-# Datatype: URI, Text
+Parent Organization=""
+# Qualifier:
+    IdentifierType=""
+    Label=""
+# Definition: The organization (ID) responsible for this project.
+# Datatype: ID
 # Obligation: mendatory, at least once
-    # Possible Identifiers:
+    # Recomnended Identifier:
     # VIAF - http://viaf.org/
     
-MemberOf=""
-IdentifierType=""
-# Definition: An Organization to which this project is affiliated.
-# Datatype: URI, Text
+Member Of=""
+# Qualifier:
+    IdentifierType=""
+    Label=""
+# Definition: An Organization (ID) to which this project is affiliated.
+# Datatype: ID
 # Obligation: optional, any number of times
-    # Possible Identifiers:
+    # Recomnended Identifier:
     # VIAF - http://viaf.org/
     
-FundingAgency=""
-IdentifierType=""
-# Definition: Organization providing project funding.
-# Datatype: URI, Text
+Funding Agency=""
+# Qualifier:
+    IdentifierType=""
+    Label=""
+# Definition: Organization (ID) providing project funding.
+# Datatype: ID
 # Obligation: recommended, once
-    # Possible Identifiers:
+    # Recomnended Identifier:
     # VIAF - http://viaf.org/
     
-ProjectLeader=""
-IdentifierType=""
-# Definition: Person in charge of this project.
-# Datatype: URI, Text
+Project Leader=""
+# Qualifier:
+    IdentifierType=""
+    Label=""
+# Definition: Person (ID) in charge of this project.
+# Datatype: ID
 # Obligation: mendatory, at least once
-    # Possible Vocabularies:
+    # Recomnended Identifiers:
     # ORCID - https://orcid.org/Alternatives
     # GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
     
 Employee=""
-IdentifierType=""
-# Definition: Someone working in this project.
-# Datatype: URI, Text
+# Qualifier:
+    IdentifierType=""
+    Label=""
+# Definition: Person (ID) working in this project.
+# Datatype: ID
 # Obligation: recommended, any number of times
-    # Possible Vocabularies:
+    # Recommended Identifiers:
     # ORCID - https://orcid.org/Alternatives
     # GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
     
