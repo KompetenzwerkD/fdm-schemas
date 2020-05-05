@@ -1,5 +1,5 @@
 
-Auf dieser Seite werden Schemas und Templates für die strukturierte Erfassung von Metadaten zu Forschungsprojekten und -datensätzen bereitgestellt. 
+Auf dieser Seite werden Schemas und Templates für die strukturierte Erfassung von Metadaten zu Forschungsprojekten und -datensätzen seitens des KompetenzwerkD bereitgestellt. 
 
 |   |  Schema (.toml Format) | Template |  Version |
 |---|---|---| --- |
