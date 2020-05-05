@@ -14,7 +14,14 @@ Das Template für Forschungsdaten dient der Beschreibung eines Datensatzes, kann
 Generell sind die Templates sehr allgemein / generisch gehalten, um eine breite Einsetzbarkeit zu gewährleisten. Im Gegenzug  
 leidet die Spezifität und es werden eventuell nicht alle Anforderungen Ihres speziellen Szenarios erfüllt. In diesem Fall sollte die Erstellung eigener Lösungen zur Metadatenerhebung als Teil des Projekt- und Datenmanagementplans aufgeführt sein.
 
+Für eine breite Anwendbarkeit der zusammengetragenen Daten ist ein Ausfüllen der Vorlagen in englischer Sprache anzuraten. Einzelne zentrale Felder wie Titel und Beschreibung sind zusätzlich ein zweites mal auf Deutsch vorhanden und explizit so gekennzeichnet.
 
+Die Vorlagen bestehen aus einzelnen Blöcken, die jeweils eine Angabe zum Datensatz oder Projekt beschreiben. So dient der folgende Abschnitt der Eingabe des englischsprachigen Titels.
+
+    Title=""  
+    \# Definition: Title of the resource in English as free text.  
+    \# Datatype: Text  
+    \# Obligation: mandatory, exactly once  
 
 ## Lizenz
 MIT
