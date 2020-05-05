@@ -25,7 +25,7 @@ Die Vorlagen bestehen aus einzelnen Blöcken, die jeweils eine Angabe zum Datens
 
 Auszufüllen ist dabei nur die erste Zeile. Die weiteren Zeilen dienen der Erläuterung, indem sie bespielsweise den Inhalt oder die Form (in diesem Fall Freitext) des einzutragenden Werts beschreiben. Auch Hinweise zur notwendigen oder freiwilligen Angabe sowie zu möglichen Mehrfachnennungen sind vorhanden. Kopieren sie in letzterem Fall einfach den gesamten Block und fügen Sie ihn ein zweites mal ein.
 
-Andere Blöcke fordern mehr als eine Angabe.
+Andere Blöcke fordern mehr als eine Angabe. Im Folgenden soll das "Subject" also das Fachgebiet angegeben werden.
 
     Subject=""  
     # Qualifier:  
@@ -37,11 +37,20 @@ Andere Blöcke fordern mehr als eine Angabe.
     # Comment: Please use a standard vocabulary for identifying the subject, we suggest using SKOS or Universal Decimal Classification. Please also state which authority file you used.  
         # Possible Vocabularies:  
         # "Universal Decimal Classification" http://www.udcsummary.info/php/index.php?lang=en  
+        # "Dewey Decimal Classification" - https://www.oclc.org/en/dewey.html  
         # "SKOS UNESCO Nomenclature" https://skos.um.es/unesco6/  
         # "Library of Congress Subject Headings" http://www.loc.gov/catdir/cpso/lcco/  
         # "Gemeinsame Normdatei" https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd.html  
 
-TODO
+In einem solchen Fall macht es Sinn statt freien Text zu nutzen, auf ein vorgegebenes standardisiertes Vokabular bzw. einen Identifikator zurückzugreifen. Fachübergreifend wird beispielsweise die Dewey Decimal Classification für diese Art Information genutzt, aber auch andere von uns angegebene Klassifikationssysteme sind möglich.
+
+Bei Nutzung von Dewey würde man das gewünschte Fachgebiet im entwprechenden Katalog nachschlagen, z.B unter https://deweysearchde.pansoft.de/webdeweysearch/mainClasses.html
+Nehmen wir an, das Ergebnis wäre die Kategorie "Geschichtsphilosophie und Geschichtstheorie" mit der Identifikationsnummer "901". Dann sollte in das Feld "Subject" die ID eingetragen werden, ergänzt durch das dazugehörige natürlichsprachliche Label und Informationen zum genutzten Klassifikationssystem.
+
+    Subject="901"  
+    # Qualifier:  
+        IdentifierType="Dewey Decimal Classification"  
+        Label="Geschichtsphilosophie und Geschichtstheorie"  
 
 ## Lizenz
 MIT
