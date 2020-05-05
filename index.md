@@ -16,12 +16,12 @@ leidet die Spezifität und es werden eventuell nicht alle Anforderungen Ihres sp
 
 Für eine breite Anwendbarkeit der zusammengetragenen Daten ist ein Ausfüllen der Vorlagen in englischer Sprache anzuraten. Einzelne zentrale Felder wie Titel und Beschreibung sind zusätzlich ein zweites mal auf Deutsch vorhanden und explizit so gekennzeichnet.
 
-Die Vorlagen bestehen aus einzelnen Blöcken, die jeweils eine Angabe zum Datensatz oder Projekt beschreiben. So dient der folgende Abschnitt der Eingabe des englischsprachigen Titels.
+Die Vorlagen bestehen aus einzelnen Blöcken, die jeweils eine Angabe zum Datensatz oder Projekt beschreiben. So dient der folgende Abschnitt der Eingabe des deutschsprachigen Titels. Auszufüllen ist dabei nur die erste Zeile. Die weiteren Zeilen dienen der Erläuterung, indem sie bespielsweise den Inhalt oder die Form (in diesem Fall Freitext) des einzutragenden Werts beschreiben. Auch Hinweise zur notwendigen oder freiwilligen Angabe sowie zu möglichen Mehrfachnennungen sind vorhanden. Kopieren...
 
-    Title=""  
-    \# Definition: Title of the resource in English as free text.  
-    \# Datatype: Text  
-    \# Obligation: mandatory, exactly once  
+    Titel="Leipziger Ausgabe der Werke von Felix Mendelssohn Bartholdy"  
+    # Definition: Title of the resource in German as free text.  
+    # Datatype: Text  
+    # Obligation: mandatory, exactly once  
 
 ## Lizenz
 MIT
