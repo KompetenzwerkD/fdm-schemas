@@ -16,12 +16,32 @@ leidet die Spezifität und es werden eventuell nicht alle Anforderungen Ihres sp
 
 Für eine breite Anwendbarkeit der zusammengetragenen Daten ist ein Ausfüllen der Vorlagen in englischer Sprache anzuraten. Einzelne zentrale Felder wie Titel und Beschreibung sind zusätzlich ein zweites mal auf Deutsch vorhanden und explizit so gekennzeichnet.
 
-Die Vorlagen bestehen aus einzelnen Blöcken, die jeweils eine Angabe zum Datensatz oder Projekt beschreiben. So dient der folgende Abschnitt der Eingabe des deutschsprachigen Titels. Auszufüllen ist dabei nur die erste Zeile. Die weiteren Zeilen dienen der Erläuterung, indem sie bespielsweise den Inhalt oder die Form (in diesem Fall Freitext) des einzutragenden Werts beschreiben. Auch Hinweise zur notwendigen oder freiwilligen Angabe sowie zu möglichen Mehrfachnennungen sind vorhanden. Kopieren...
+Die Vorlagen bestehen aus einzelnen Blöcken, die jeweils eine Angabe zum Datensatz oder Projekt beschreiben. So dient der folgende Abschnitt der Eingabe des deutschsprachigen Titels.
 
     Titel="Leipziger Ausgabe der Werke von Felix Mendelssohn Bartholdy"  
     # Definition: Title of the resource in German as free text.  
     # Datatype: Text  
     # Obligation: mandatory, exactly once  
+
+Auszufüllen ist dabei nur die erste Zeile. Die weiteren Zeilen dienen der Erläuterung, indem sie bespielsweise den Inhalt oder die Form (in diesem Fall Freitext) des einzutragenden Werts beschreiben. Auch Hinweise zur notwendigen oder freiwilligen Angabe sowie zu möglichen Mehrfachnennungen sind vorhanden. Kopieren sie in letzterem Fall einfach den gesamten Block und fügen Sie ihn ein zweites mal ein.
+
+Andere Blöcke fordern mehr als eine Angabe.
+
+    Subject=""  
+    # Qualifier:  
+        IdentifierType=""  
+        Label=""  
+    # Definition: A topic or scientific field of the resource.  
+    # Datatype: ID  
+    # Obligation: recommended, any number of times  
+    # Comment: Please use a standard vocabulary for identifying the subject, we suggest using SKOS or Universal Decimal Classification. Please also state which authority file you used.  
+        # Possible Vocabularies:  
+        # "Universal Decimal Classification" http://www.udcsummary.info/php/index.php?lang=en  
+        # "SKOS UNESCO Nomenclature" https://skos.um.es/unesco6/  
+        # "Library of Congress Subject Headings" http://www.loc.gov/catdir/cpso/lcco/  
+        # "Gemeinsame Normdatei" https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd.html  
+
+TODO
 
 ## Lizenz
 MIT
