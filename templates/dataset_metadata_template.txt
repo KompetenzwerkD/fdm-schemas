@@ -1,5 +1,5 @@
 
-# Dataset Profile
+# KompetenzwerkD Dataset Metadata Schema
 #
 # Schema verson: 0.4
 # Schema file: https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/schemas/dataset_metadata_schema.toml
