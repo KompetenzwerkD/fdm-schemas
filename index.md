@@ -4,8 +4,8 @@
 
 |   |  Schema (.toml Format) | Template |  Version |
 |---|---|---| --- |
-| Forschungsdaten  |  [Schema](schemas/dcmi_dataset_pofile.toml) | [Template](templates/dcmi_dataset_pofile.txt)  |  0.3 |
-| Forschungsprojekte  |  [Schema](schemas/project_metadata_schema.toml) | [Template](templates/project_metadata_schema.txt)  | 0.3 |
+| Forschungsdaten  |  [Schema](schemas/dataset_metadata_schema.toml) | [Template](templates/dataset_metadata_template.txt)  |  0.4 |
+| Forschungsprojekte  |  [Schema](schemas/project_metadata_schema.toml) | [Template](templates/project_metadata_template.txt)  | 0.3 |
 <br>
 
 ## Informationen
