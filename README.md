@@ -6,7 +6,7 @@ Dieses Repositorium stellt Metadaten-Schemas für die strukturierte Erfassung vo
 
 Die Schemas befinden sich im `schemas` Verzeichnis und sind im [TOML](https://github.com/toml-lang/toml)-Format verfasst.
 
-* `dcmi_dataset_profile.toml` - Metadatenschema für Forschungsdatensätze
+* `dataset_metadata_schema.toml` - Metadatenschema für Forschungsdatensätze
 * `project_metadata_schema.toml` - Schema zur Beschreibung von Forschungsprojekten
 
 ## Templates
