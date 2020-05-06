@@ -303,7 +303,7 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Datatype = "ID"
     Language = ""
     Hint = """
-    Use one of the following identifiers:
+    # Use one of the following identifiers:
     # 'ORCID' - https://orcid.org/Alternatives
     # 'GND' - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
     """
@@ -320,7 +320,7 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Datatype = "ID"
     Language = ""
     Hint = """
-    Use one of the following identifiers:
+    # Use one of the following identifiers:
     # 'ORCID' - https://orcid.org/Alternatives
     # 'GND' - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
     """
