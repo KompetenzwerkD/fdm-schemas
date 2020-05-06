@@ -180,9 +180,9 @@ Creator=""
 # Datatype: ID
 # Obligation: recommended, any number of times
 # Comment: Recommended practice is to identify the creator with an identifier (such as ORCID, GND - please sate which one you used) or URI. If this is not possible or feasible, a literal value that identifies the creator may be provided.
-    Use one of the following identifiers:
-    ORCID - https://orcid.org/Alternatives
-    GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
+    # Use one of the following identifiers:
+    # ORCID - https://orcid.org/Alternatives
+    # GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
     
 Contributor=""
 # Qualifier:
@@ -192,9 +192,9 @@ Contributor=""
 # Datatype: ID
 # Obligation: optional, any number of times
 # Comment: Recommended practice is to identify a contributor with an identifier (such as ORCID, GND - please sate which one you used) or URI. If this is not possible or feasible, a literal value that identifies the creator may be provided.
-    Use one of the following identifiers:
-    ORCID - https://orcid.org/Alternatives
-    GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
+    # Use one of the following identifiers:
+    # ORCID - https://orcid.org/Alternatives
+    # GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
     
 Provenance=""
 # Definition: A statement (http://purl.org/dc/terms/ProvenanceStatement) of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.
