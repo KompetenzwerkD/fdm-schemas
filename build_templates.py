@@ -19,7 +19,9 @@ FOOTER = """
 # ----------------------------
 # Anmerkungen:
 # Bitte Freitext stets in Englisch ausfüllen, außer es ist explizit anders angegeben.
+# Das Feld 'Label' dient, falls vorhanden, der natürlichsprachlichen Beschreibung eines Identifikators.
 # Falls Sie ein Attribut mehrfach ausfüllen wollen, kopieren Sie einfach den entsprechenden Block und fügen Sie ihn erneut ins Dokument ein.
+# Bitte beachten Sie die Hinweise zum Ausfüllen dieser Vorlage, zu finden auf der Webseite des KompetenzwerkD.
 # Bei Fragen wenden Sie sich gerne jederzeit an das KompetenzWerkD, z.B. per Mail: kompetenzwerkd@saw-leipzig.de
 #
 # Für Datumsangaben empfehlen wir stets den Standard ISO 8601.
