@@ -304,8 +304,8 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Language = ""
     Hint = """
     Use one of the following identifiers:
-    'ORCID' - https://orcid.org/Alternatives
-    'GND' - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
+    # 'ORCID' - https://orcid.org/Alternatives
+    # 'GND' - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
     """
     
     [Provenance.Contributor]
@@ -321,8 +321,8 @@ Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/
     Language = ""
     Hint = """
     Use one of the following identifiers:
-    'ORCID' - https://orcid.org/Alternatives
-    'GND' - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
+    # 'ORCID' - https://orcid.org/Alternatives
+    # 'GND' - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
     """
     
     [Provenance.Provenance]
