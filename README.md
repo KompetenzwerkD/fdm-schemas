@@ -1,4 +1,4 @@
-# FDM Shemas
+# FDM Schemas
 
 Dieses Repositorium stellt Metadaten-Schemas für die strukturierte Erfassung von Forschungsprojekte und -datensätze bereit.
 
