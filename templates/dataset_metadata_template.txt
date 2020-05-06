@@ -38,11 +38,11 @@ Subject=""
 # Obligation: recommended, any number of times
 # Comment: Please use a standard vocabulary for identifying the subject, we suggest using SKOS or Universal Decimal Classification. Please also state which authority file you used.
     # Possible Vocabularies:
-    # Universal Decimal Classification - http://www.udcsummary.info/php/index.php?lang=en
-    # Dewey Decimal Classification - https://www.oclc.org/en/dewey.html
-    # SKOS UNESCO Nomenclature - https://skos.um.es/unesco6/
-    # Library of Congress Subject Headings - http://www.loc.gov/catdir/cpso/lcco/
-    # Gemeinsame Normdatei - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd.html
+    # 'Universal Decimal Classification' - http://www.udcsummary.info/php/index.php?lang=en
+    # 'Dewey Decimal Classification' - https://www.oclc.org/en/dewey.html
+    # 'SKOS UNESCO Nomenclature' - https://skos.um.es/unesco6/
+    # 'Library of Congress Subject Headings' - http://www.loc.gov/catdir/cpso/lcco/
+    # 'Gemeinsame Normdatei' - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd.html
     
 Spatial Coverage=""
 # Qualifier:
@@ -53,11 +53,11 @@ Spatial Coverage=""
 # Obligation: optional, any number of times
 # Comment: Try to use an authority file or geographic reference system described below and sate which one was utilized.
     # Possible Vocabularies
-    # GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html http://swb.bsz-bw.de/DB=2.104/
-    # Getty Thesaurus of Geographic Names - http://www.getty.edu/research/tools/vocabularies/tgn/index.html
-    # Pleiades Gazetteer and Graph of Ancient Places - https://pleiades.stoa.org/
-    # Dublin Core Box - https://www.dublincore.org/specifications/dublin-core/dcmi-box/
-    # Dublin Core Point - https://www.dublincore.org/specifications/dublin-core/dcmi-point/
+    # 'GND' - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html http://swb.bsz-bw.de/DB=2.104/
+    # 'Getty Thesaurus of Geographic Names' - http://www.getty.edu/research/tools/vocabularies/tgn/index.html
+    # 'Pleiades Gazetteer and Graph of Ancient Places' - https://pleiades.stoa.org/
+    # 'Dublin Core Box' - https://www.dublincore.org/specifications/dublin-core/dcmi-box/
+    # 'Dublin Core Point' - https://www.dublincore.org/specifications/dublin-core/dcmi-point/
     
 Temporal Coverage=""
 # Definition: Temporal characteristics of the resource.
@@ -181,8 +181,8 @@ Creator=""
 # Obligation: recommended, any number of times
 # Comment: Recommended practice is to identify the creator with an identifier (such as ORCID, GND - please sate which one you used) or URI. If this is not possible or feasible, a literal value that identifies the creator may be provided.
     # Use one of the following identifiers:
-    # ORCID - https://orcid.org/Alternatives
-    # GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
+    # 'ORCID' - https://orcid.org/Alternatives
+    # 'GND' - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
     
 Contributor=""
 # Qualifier:
@@ -193,8 +193,8 @@ Contributor=""
 # Obligation: optional, any number of times
 # Comment: Recommended practice is to identify a contributor with an identifier (such as ORCID, GND - please sate which one you used) or URI. If this is not possible or feasible, a literal value that identifies the creator may be provided.
     # Use one of the following identifiers:
-    # ORCID - https://orcid.org/Alternatives
-    # GND - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
+    # 'ORCID' - https://orcid.org/Alternatives
+    # 'GND' - https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html
     
 Provenance=""
 # Definition: A statement (http://purl.org/dc/terms/ProvenanceStatement) of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.
