@@ -23,7 +23,7 @@ leidet die Spezifität und es werden eventuell nicht alle Anforderungen Ihres sp
 
 ## Anleitung
 
-Laden Sie sich die Templates (rechte Spalte) herunter, öffnen Sie sie in einem beliebigen Texteditor und füllen sie diese mit den nötigen Informationen zu Ihrem Projekt und Ihren Daten aus.
+Laden Sie sich die Templates (rechte Spalte) herunter, öffnen Sie sie in einem beliebigen Texteditor und füllen sie diese mit den nötigen Informationen zu Ihrem Projekt und Ihren Daten aus. Es ist nicht nötig alle Felder auszufüllen! Tragen Sie einfach jene Informationen zusammen, die für Ihre spezielle Anwendung von Bedeutung sind.
 
 Das Template für Forschungsdaten dient der Beschreibung eines Datensatzes, kann aber auch für Einzeldaten oder Einzelobjekte eingesetzt werden. Die Vorlage für Forschungsprojekte stellt eine sinnvolle Ergänzung mit allgemeinen Informationen zum Projekt dar und entkoppelt diese Informationen von jedem Einzeldatensatz (nur einmal ausfüllen, juhu!).
 
