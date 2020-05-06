@@ -1,5 +1,5 @@
 
-# Project Metadata
+# KompetenzwerkD Project Metadata Schema
 #
 # Schema verson: 0.3
 # Schema file: https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/schemas/project_metadata_schema.toml
