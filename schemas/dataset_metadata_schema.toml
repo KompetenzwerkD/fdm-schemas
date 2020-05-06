@@ -1,5 +1,5 @@
 [Metadata]
-Title = "KompetenzwerkD Dataset Profile"
+Title = "KompetenzwerkD Dataset Metadata Schema"
 Changed = "05.05.2020"
 Version = "0.4"
 Location = "https://raw.githubusercontent.com/KompetenzwerkD/fdm-schemas/master/schemas/dcmi_dataset_profile.toml"
