@@ -1,13 +1,16 @@
-Auf dieser Seite werden Schemas und Templates für die strukturierte Erfassung von Metadaten zu Forschungsprojekten und -datensätzen seitens des KompetenzwerkD bereitgestellt.
+# Metadatenerfassung für Forschungsdaten und Projekte
+
+## Metadatenschemata / Vorlagen
 
 |   |  Schema (.toml Format) | Template |  Version |
 |---|---|---| --- |
 | Forschungsdaten  |  [Schema](schemas/dcmi_dataset_pofile.toml) | [Template](templates/dcmi_dataset_pofile.txt)  |  0.3 |
 | Forschungsprojekte  |  [Schema](schemas/project_metadata_schema.toml) | [Template](templates/project_metadata_schema.txt)  | 0.3 |
+<br>
 
 ## Informationen
 
-...
+Auf dieser Seite werden Schemas und Templates für die strukturierte Erfassung von Metadaten zu Forschungsprojekten und -datensätzen seitens des KompetenzwerkD bereitgestellt.
 
 Die auf diese Weise strukturiert erfassten Metadaten können später bei Veröffentlichung oder Archivierung beispielsweise als Teil der Dokumentation den Daten beigelegt werden. Ebenso können sie eine hilfreiche Basis sein, falls Metadaten für die Übergabe an ein Forschungsdatenrepositorium oder Archiv zusammengetragen werden müssen.
 
